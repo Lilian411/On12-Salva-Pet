@@ -1,6 +1,23 @@
-const app = require("./src/app.js");
+const express = require("express")
+const app = express()
+const cors = require("cors")
+const PORT = process.env.PORT || 8888
 
-// definir uma rota para nosso servidor
-app.listen(3333,() => {
-    console.log("Hello,estou na porta 3333, bora lá?!")
-});
+const db = require("./src/data/database")
+db.connect()
+
+app.use(cors())
+app.use(express.json())
+
+const bancoRouter = require('./src/routes/banco.routes')
+app.use('/banco', bancoRouter)
+
+const doadorRouter = require('./src/routes/doador.routes')
+app.use('/doador', doadorRouter)
+
+const recptorRouter = require('./src/routes/recptor.routes')
+app.use('/recptor', recptorRouter)
+
+app.listen(PORT, () => console.log(` servidor rodando na porta : ${PORT}`));
+
+module.exports = app

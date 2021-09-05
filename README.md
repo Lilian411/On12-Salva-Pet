@@ -3,38 +3,18 @@ Ola,seja bem vindo (a) ao projeto de conclusão do bootcamp de Back-End {reprogr
 
 A ideia é que ela possa ser aproveitada para criação de um app,assim podendo facilitar o encontro de doador e recptor. ampliar o nivel de doações, e concientizar a população do quão importante é para os animais a doação de sangue quanto para os humanos e suas vantagens.
 
-INFORMAÇÕES: BANCO DE SANGUE VETERINÁRIO: COMO FUNCIONA?
-Assim como os seres humanos, os nossos animais de estimação podem ser doadores de sangue e salvar vidas de outros animais
-Entretanto, há alguns requisitos e exames que são necessários para fazer parte de um banco de sangue veterinário. 
-Cães
-Idade entre 1 e 8 anos;
-Peso mínimo de 27kg;
-Temperamento calmo e dócil;
-Vacinação e vermifugação atualizadas;
-Controle de carrapatos e pulgas
-Não possuir alguma doença nem transfusão prévia.
-Gatos
-Idade entre 1 e 7 anos;
-Peso mínimo de 4kg;
-Temperamento calmo e dócil;
-Vacinação e vermifugação atualizadas;
-Controle de pulgas e carrapatos;
-Não possuir alguma doença nem transfusão prévia.
-Existem vários benefícios para o animal que se torna um doador: 
-Veja os 12 exames que seu animal de estimação pode receber de graça nos bancos de sangue veterinário:
+Tecnologias utilizadas no projeto
+Ferramentas e descrições
 
-Hemograma completo;
-Contagem de plaquetas;
-Ureia e creatinina;
-Brucelose;
-Leishmaniose;
-Dirofilariose;
-Erliquiose;
-Babesiose;
-Doença de Lyme;
-Febre maculosa;
-FIV e FeLV (felinos);
-Mycoplasma haemofelis (felinos).
-
-CONTEXTUALIZAÇÃO: 
-  A ausência de divulgação sobre esse trabalho causa nescessidade 
+JavaScript: Linguagem de programação.
+Nó JS: Ambiente de execução do JavaScript.
+Expresso: Framework Node JS.
+Mongoose: Dependência que interage com o MongoDB para conexão de banco de dados, criação do modelo e das coleções.
+Nodemon: Dependência que observa as atualizações realizadas nos documentos para rodar ou servidor automaticamente.
+Cors: Dependência que facilita a permissão de acesso à API.
+Dotenv: Dependência que ajuda a proteger dados sensíveis.
+npm: Gerenciador de pacotes.
+MongoDb: Banco de dados não relacional orientado a documentos.
+Robo 3T: Interface gráfica para verificar se os dados foram persistidos no banco de dados.
+Postman: Interface gráfica para realizar os testes.
+Git / GitHub: Versão de código.
