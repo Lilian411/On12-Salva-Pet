@@ -6,7 +6,7 @@ const controller = require('../controllers/recptorController')
 router.get('/', controller.getAll )
 
 //criar um novo banco /poasync (req, res) => 
-router.post('/', controller.createTitle)
+router.post('/', controller.createRecptor)
 
 router.patch('/:id', controller.updateOne)
 router.patch ('/:id', controller.updateOne)

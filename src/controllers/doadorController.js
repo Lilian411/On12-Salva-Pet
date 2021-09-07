@@ -26,6 +26,7 @@ const createdoador = async (req, res) => {
     } catch (err) {
         res.status(400).json({ message: err.message})
     }
+}
     const updateOne = async (req, res) => {
         try {
         const doador = await Doador.findById(req.params.id)
@@ -42,7 +43,6 @@ const createdoador = async (req, res) => {
             res.status(500).json({message: err.message})
         }
 }
-
 const updatePet = async (req, res) => {
     try{
         const doador = await Doador.findById(req.params.id)
@@ -209,4 +209,4 @@ module.exports = {
     updateEmail,
     updateLocal,
     deleteById
-}}
+}
