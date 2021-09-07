@@ -1,4 +1,4 @@
-mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
 const bancoSchema = new mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
@@ -14,7 +14,7 @@ const bancoSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    horas: {
+    email: {
         type: String,
         required: true
     },
