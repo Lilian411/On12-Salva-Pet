@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
-const recptor = require('../models/recptor')
 const Recptor = require('../models/recptor')
+
 
 const getAll =  async ( req, res) => {
     const recptores = await Recptor.find()
