@@ -17,3 +17,7 @@ app.use('/doador', doadorRouter)
 
 const recptorRouter = require('./src/routes/receptor.routes')
 app.use('/receptor', recptorRouter) 
+
+app.listen(PORT, () => {
+    console.log('Hello world,estou na porta ${PORT}')
+})
