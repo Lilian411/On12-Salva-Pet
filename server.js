@@ -15,5 +15,5 @@ app.use('/banco', bancoRouter)
 const doadorRouter = require('./src/routes/doador.routes')
 app.use('/doador', doadorRouter)
 
-const recptorRouter = require('./src/routes/recptor.routes')
-app.use('/recptor', recptorRouter) 
+const recptorRouter = require('./src/routes/receptor.routes')
+app.use('/receptor', recptorRouter) 

@@ -1,12 +1,12 @@
 const express = require('express')
 const router = express.Router()
-const controller = require('../controllers/recptorController')
+const controller = require('../controllers/receptorController')
 
 // listar todos os bancos / get> find
-router.get('/', controller.getAll )
+router.get('/todos', controller.getAll )
 
 //criar um novo banco /poasync (req, res) => 
-router.post('/', controller.createRecptor)
+router.post('/cadastrar', controller.createReceptor)
 
 router.patch('/:id', controller.updateOne)
 router.patch ('/:id', controller.updateOne)
@@ -20,7 +20,7 @@ router.patch('/telefone/:id', controller.updateTelefone)
 router.patch('/email/:id', controller.updateEmail)
 router.patch('/local/:id', controller.updateLocal)
 
-router.delete('/:id', controller.deleteById)
+router.delete('/deletar/:id', controller.deleteById)
 
 
 module.exports = router

@@ -1,13 +1,13 @@
 const mongoose = require('mongoose')
-const Recptor = require('../models/recptor')
+const Receptor = require('../models/receptor')
 
 
 const getAll =  async ( req, res) => {
-    const recptores = await Recptor.find()
-        res.status(200).json(recptores)
+    const receptores = await Receptor.find()
+        res.status(200).json(receptores)
     }
-    const createRecptor =  async (req, res) => {
-        const recptor = new Recptor ({
+    const createReceptor =  async (req, res) => {
+        const receptor = new Receptor ({
        _id: new mongoose.Types.ObjectId(),
         pet: req.body.pet,
         idade: req.body.idade,
@@ -21,8 +21,8 @@ const getAll =  async ( req, res) => {
         creadoEm: req.body.criadoEm
         })
         try{
-         const novoRecptor = await recptor.save()
-         res.status(201).json(novoRecptor)
+         const novoReceptor = await receptor.save()
+         res.status(201).json(novoReceptor)
         } catch (err) {
             res.status(400).json({ message: err.message})
         }
@@ -32,15 +32,15 @@ const getAll =  async ( req, res) => {
     //atualizar uma informaçao especifica num banco/patch/findById/save
     const updateOne = async (req, res) => {
         try {
-        const recptor = await Recptor.findById(req.params.id)
-        if (recptor == null) {
+        const receptor = await Receptor.findById(req.params.id)
+        if (receptor == null) {
             return res.status(404).json({message: "receptor não encontrado"})
         }
         if (req.body.nome != null) {
-            recptor.nome = req.body.nome
+            receptor.nome = req.body.nome
         }
-        const recptorAtualizado = await recptor.save()
-        res.status(200).json(recptorAtualizado)
+        const receptorAtualizado = await receptor.save()
+        res.status(200).json(receptorAtualizado)
         
         } catch (err) {
             res.status(500).json({message: err.message})
@@ -48,14 +48,14 @@ const getAll =  async ( req, res) => {
     }
     const updatePet = async (req, res) => {
         try{
-            const recptor = await Recptor.findById(req.params.id)
-            if(recptor == null){
-                return res.status(404).json({message: "Recptor não encontrado."})
+            const receptor = await Receptor.findById(req.params.id)
+            if(receptor == null){
+                return res.status(404).json({message: "Receptor não encontrado."})
             }
             if(req.body.pet != null){
-                recptor.pet = req.body.pet
+                receptor.pet = req.body.pet
             }
-            const petAtualizado = await recptor.save()
+            const petAtualizado = await receptor.save()
             res.status(200).json(petAtualizado)
         }catch (error){
             res.status(500).json({ message: error.message})
@@ -64,14 +64,14 @@ const getAll =  async ( req, res) => {
     
     const updateIdade = async (req, res) => {
         try{
-            const recptor = await Recptor.findById(req.params.id)
-            if(recptor == null){
-                return res.status(404).json({message: "Recptor não encontrado."})
+            const receptor = await Receptor.findById(req.params.id)
+            if(receptor == null){
+                return res.status(404).json({message: "Receptor não encontrado."})
             }
             if(req.body.idade != null){
-                recptor.idade = req.body.idade
+                receptor.idade = req.body.idade
             }
-            const idadeAtualizada = await recptor.save()
+            const idadeAtualizada = await receptor.save()
             res.status(200).json(idadeAtualizada)
         }catch (error){
             res.status(500).json({ message: error.message})
@@ -79,14 +79,14 @@ const getAll =  async ( req, res) => {
     }
     const updateRaca = async (req, res) => {
         try{
-            const recptor = await Recptor.findById(req.params.id)
-            if(recptor == null){
-                return res.status(404).json({message: "Recptor não encontrado."})
+            const receptor = await Receptor.findById(req.params.id)
+            if(receptor == null){
+                return res.status(404).json({message: "Receptor não encontrado."})
             }
             if(req.body.raca != null){
-                recptor.raca = req.body.raca
+                receptor.raca = req.body.raca
             }
-            const racaAtualizada = await recptor.save()
+            const racaAtualizada = await receptor.save()
             res.status(200).json(racaAtualizada)
         }catch (error){
             res.status(500).json({ message: error.message})
@@ -94,14 +94,14 @@ const getAll =  async ( req, res) => {
     }
     const updatePeso = async (req, res) => {
         try{
-            const recptor = await Recptor.findById(req.params.id)
-            if(recptor == null){
-                return res.status(404).json({message: "Recptor não encontrado."})
+            const receptor = await Receptor.findById(req.params.id)
+            if(receptor == null){
+                return res.status(404).json({message: "Receptor não encontrado."})
             }
             if(req.body.peso != null){
-                recptor.peso = req.body.peso
+                receptor.peso = req.body.peso
             }
-            const pesoAtualizado = await recptor.save()
+            const pesoAtualizado = await receptor.save()
             res.status(200).json(pesoAtualizado)
         }catch (error){
             res.status(500).json({ message: error.message})
@@ -110,14 +110,14 @@ const getAll =  async ( req, res) => {
     
      const updateVacinas = async (req, res) => {
         try{
-            const recptor = await Recptor.findById(req.params.id)
-            if(recptor == null){
-                return res.status(404).json({message: "Recptor não encontrado."})
+            const receptor = await Receptor.findById(req.params.id)
+            if(receptor == null){
+                return res.status(404).json({message: "Receptor não encontrado."})
             }
             if(req.body.vacinas != null){
-                recptor.vacinas = req.body.vacinas
+                receptor.vacinas = req.body.vacinas
             }
-            const vacinaAtualizado = await recptor.save()
+            const vacinaAtualizado = await receptor.save()
             res.status(200).json(vacinaAtualizado)
         }catch (error){
             res.status(500).json({ message: error.message})
@@ -126,14 +126,14 @@ const getAll =  async ( req, res) => {
     
       const updateDono = async (req, res) => {
         try{
-            const recptor = await Recptor.findById(req.params.id)
-            if(recptor == null){
-                return res.status(404).json({message: "Recptor não encontrado."})
+            const receptor = await Receptor.findById(req.params.id)
+            if(receptor == null){
+                return res.status(404).json({message: "Receptor não encontrado."})
             }
             if(req.body.dono != null){
-                recptor.dono = req.body.dono
+                receptor.dono = req.body.dono
             }
-            const donoAtualizado = await recptor.save()
+            const donoAtualizado = await receptor.save()
             res.status(200).json(donoAtualizado)
         }catch (error){
             res.status(500).json({ message: error.message})
@@ -141,14 +141,14 @@ const getAll =  async ( req, res) => {
     }
       const updateTelefone = async (req, res) => {
         try{
-            const recptor = await Recptor.findById(req.params.id)
-            if(recptor == null){
-                return res.status(404).json({message: "Recptor não encontrado."})
+            const receptor = await Receptor.findById(req.params.id)
+            if(receptor == null){
+                return res.status(404).json({message: "Receptor não encontrado."})
             }
             if(req.body.telefone != null){
-                recptor.telefone = req.body.telefone
+                receptor.telefone = req.body.telefone
             }
-            const telefoneAtualizado = await recptor.save()
+            const telefoneAtualizado = await receptor.save()
             res.status(200).json(telefoneAtualizado)
         }catch (error){
             res.status(500).json({ message: error.message})
@@ -156,14 +156,14 @@ const getAll =  async ( req, res) => {
     } 
     const updateEmail = async (req, res) => {
         try{
-            const recptor = await Recptor.findById(req.params.id)
-            if(recptor == null){
-                return res.status(404).json({message: "Recptor não encontrado."})
+            const receptor = await Receptor.findById(req.params.id)
+            if(receptor == null){
+                return res.status(404).json({message: "Receptor não encontrado."})
             }
             if(req.body.email != null){
-                recptor.email = req.body.email
+                receptor.email = req.body.email
             }
-            const emailAtualizado = await recptor.save()
+            const emailAtualizado = await receptor.save()
             res.status(200).json(emailAtualizado)
         }catch (error){
             res.status(500).json({ message: error.message})
@@ -171,14 +171,14 @@ const getAll =  async ( req, res) => {
     } 
     const updateLocal = async (req, res) => {
         try{
-            const recptor = await Recptor.findById(req.params.id)
-            if(recptor == null){
-                return res.status(404).json({message: "Recptor não encontrado."})
+            const receptor = await Receptor.findById(req.params.id)
+            if(receptor == null){
+                return res.status(404).json({message: "Receptor não encontrado."})
             }
             if(req.body.local != null){
-                recptor.local = req.body.local
+                receptor.local = req.body.local
             }
-            const localAtualizado = await recptor.save()
+            const localAtualizado = await receptor.save()
             res.status(200).json(localAtualizado)
         }catch (error){
             res.status(500).json({ message: error.message})
@@ -186,13 +186,13 @@ const getAll =  async ( req, res) => {
     } 
     
     const deleteById = async (req, res) => {
-        const recptor = await Recptor.findById(req.params.id)
-            if(recptor == null){
-                return res.status(404).json({message: "Recptor não encontrado."})
+        const receptor = await Recptor.findById(req.params.id)
+            if(receptor == null){
+                return res.status(404).json({message: "Receptor não encontrado."})
             }
             try{
-                await recptor.remove()
-                res.status(200).json({ message: "Recptor excluído com sucesso." })
+                await receptor.remove()
+                res.status(200).json({ message: "Receptor excluído com sucesso." })
             } catch (error){
                 res.status(500).json({ message: error.message})
             }
@@ -200,7 +200,7 @@ const getAll =  async ( req, res) => {
     
     module.exports = {
         getAll,
-        createRecptor,
+        createReceptor,
         updateOne,
         updatePet,
         updateIdade,

@@ -3,8 +3,8 @@ const router = express.Router()
 const controller = require('../controllers/doadorController')
 const {getAll} = require('../controllers/doadorController')
 
-router.get ('/', controller.getAll)
-router.post ('/', controller.createdoador)
+router.get ('/todos', controller.getAll)
+router.post ('/cadastrar', controller.createdoador)
 
 router.patch ('/:id', controller.updateOne)
 router.patch('/pet/:id', controller.updatePet)
@@ -17,7 +17,7 @@ router.patch('/telefone/:id', controller.updateTelefone)
 router.patch('/email/:id', controller.updateEmail)
 router.patch('/local/:id', controller.updateLocal)
 
-router.delete('/:id', controller.deleteById)
+router.delete('/deletar/:id', controller.deleteById)
 
 
 module.exports = router
