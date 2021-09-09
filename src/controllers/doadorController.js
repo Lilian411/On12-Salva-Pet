@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const Doador = require('../models/doador')
 
 const getAll = async (req, res) => {
-    const doadores = await Doador.find()
+    //const doadores = await Doador.find()
    // res.status(200).json(doadores)
    try{ res.status(200).json({sera: 'tudo ok, xuxu'})
 } catch(error){
