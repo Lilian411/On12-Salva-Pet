@@ -6,24 +6,20 @@ OBJETIVO:
 
 A ideia é que ela possa ser aproveitada para criação de um app,assim podendo facilitar o encontro de doador e recptor. ampliar o nivel de doações, e concientizar a população do quão importante é para os animais a doação de sangue quanto para os humanos e suas vantagens.
 -----------------------------------------------------------------------------------------------
+Tecnologias utilizadas:
+Ferramentas 	Descrição
 
-TECNOLOGIAS UTILIZADAS NO PROJETO:
-Ferramentas e descrições
-
-JavaScript: Linguagem de programação.
-Nó JS: Ambiente de execução do JavaScript.
-Expresso: Framework Node JS.
-Mongoose: Dependência que interage com o MongoDB para conexão de banco de dados, criação do modelo e das coleções.
-Nodemon: Dependência que observa as atualizações realizadas nos documentos para rodar ou servidor automaticamente.
-Cors: Dependência que facilita a permissão de acesso à API.
-Dotenv: Dependência que ajuda a proteger dados sensíveis.
-npm: Gerenciador de pacotes.
-MongoDb: Banco de dados não relacional orientado a documentos.
-Robo 3T: Interface gráfica para verificar se os dados foram persistidos no banco de dados.
-Postman: Interface gráfica para realizar os testes.
-Git / GitHub: Versão de código.
-
------------------------------------------------------------------------------------------------
+javascript:	Linguagem de programação
+nodejs:	Ambiente de execução do javascript
+express:	Framework NodeJS
+dotenv:	Dependência para proteger dados sensíveis do projeto
+mongoose:	Dependência que interage com o MongoDB para conexão de banco de dados, criação do modelo e das coleções
+nodemon:	Dependência que observa como atualizações atualizadas nos documentos para rodar o servidor automaticamente
+npm: Gerenciador de pacotes
+MongoDb:	Banco de dado não relacional orientado a documentos
+Heroku:	Plataforma nuvem que faz implantar várias aplicações back-end
+Postman:	Interface gráfica para realizar os testes
+---------------------------------------------------------------------------------------------
 
 ARQUITETURA MVC :
  📁 projetoFinal
