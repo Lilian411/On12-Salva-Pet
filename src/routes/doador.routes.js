@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const controller = require('../controllers/doadorController')
-const {getAll} = require('../controllers/doadorController')
+
 
 router.get ('/todos', controller.getAll)
 router.post ('/cadastrar', controller.createdoador)

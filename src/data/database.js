@@ -10,8 +10,13 @@ const connect = () => {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
-  .then(console.log('Database conectada.'))
-  .catch(error => console.error(error))
+.then(()=>{
+  console.log("Conectadas bb no MongoDb Atlas")
+})
+.catch((error)=>{
+  console.log("Algo deu errado")
+  console.error(error)
+})
 }
 
 module.exports = { connect }
