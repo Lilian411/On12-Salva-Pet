@@ -16,7 +16,7 @@ const createdoador = async (req, res) => {
     pet: req.body.pet,
     idade: req.body.idade,
     raca: req.body.raca,
-    peso: req.body.horas,
+    peso: req.body.peso,
     vacinas: req.body.vacinas,
     dono: req.body.dono,
     telefone: req.body.telefone,
@@ -98,11 +98,11 @@ const updatePeso = async (req, res) => {
         const doador = await Doador.findById(req.params.id)
         if(doador == null){
             return res.status(404).json({message: "Doador não encontrado."})
-        }
+       }
         if(req.body.peso != null){
             doador.peso = req.body.peso
         }
-        const pesoAtualizado = await doador.save()
+    const pesoAtualizado = await doador.save()
         res.status(200).json(pesoAtualizado)
     }catch (error){
         res.status(500).json({ message: error.message})
