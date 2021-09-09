@@ -16,7 +16,7 @@ const createbanco =  async (req, res) => {
     })
     const bancoJaExiste = await Banco.findOnde({nome: req.body.nome})
     if (bancoJaExiste) {
-        return res.status(409).json({error: ' Banco ja cadastrado.'})
+       return res.status(409).json({error: ' Banco ja cadastrado.'})
     }
     try{
      const novoBanco = await banco.save()

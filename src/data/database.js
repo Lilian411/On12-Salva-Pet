@@ -11,7 +11,7 @@ const connect = () => {
   useUnifiedTopology: true
 })
 .then(()=>{
-  console.log("Conectadas bb no MongoDb Atlas")
+  console.log("Conectada bb no MongoDb Atlas")
 })
 .catch((error)=>{
   console.log("Algo deu errado")

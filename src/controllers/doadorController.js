@@ -3,7 +3,11 @@ const Doador = require('../models/doador')
 
 const getAll = async (req, res) => {
     const doadores = await Doador.find()
-    res.status(200).json(doador)
+   // res.status(200).json(doadores)
+   try{ res.status(200).json({sera: 'tudo ok, xuxu'})
+} catch(error){
+       res.status(500).json({error})
+}
 }
 
 const createdoador = async (req, res) => {
