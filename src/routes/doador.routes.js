@@ -2,7 +2,6 @@ const express = require('express')
 const router = express.Router()
 const controller = require('../controllers/doadorController')
 
-
 router.get ('/todos', controller.getAll)
 router.post ('/cadastrar', controller.createdoador)
 
@@ -18,6 +17,5 @@ router.patch('/email/:id', controller.updateEmail)
 router.patch('/local/:id', controller.updateLocal)
 
 router.delete('/deletar/:id', controller.deleteById)
-
 
 module.exports = router

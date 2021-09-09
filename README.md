@@ -17,7 +17,7 @@ mongoose:	Dependência que interage com o MongoDB para conexão de banco de dado
 nodemon:	Dependência que observa como atualizações atualizadas nos documentos para rodar o servidor automaticamente
 npm: Gerenciador de pacotes
 MongoDb:	Banco de dado não relacional orientado a documentos
-Heroku:	Plataforma nuvem que faz implantar várias aplicações back-end
+Heroku:	Plataforma nuvem que faz implantar várias aplicações 
 Postman:	Interface gráfica para realizar os testes
 ---------------------------------------------------------------------------------------------
 
@@ -32,18 +32,19 @@ ARQUITETURA MVC :
    |    |- 📁 controllers
    |         |- 📄 bancoController.js
    |         |- 📄 doadorController.js
-   |         |- 📄 recptorController.js
+   |         |- 📄 receptorController.js
    |
    |    |- 📁 models
    |         |- 📄 banco.js
    |         |- 📄 doador.js
-   |         |- 📄 recptor.js
+   |         |- 📄 receptor.js
    |
    |    |- 📁 routes
    |         |- 📄 banco.routes.js 
    |         |- 📄 doador.routes.js
-   |         |- 📄 recptor.routes.js
-   |
+   |         |- 📄 receptor.routes.js
+
+   |    |- 📄 app.js
    | 
    |
    |
