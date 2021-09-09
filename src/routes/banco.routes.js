@@ -1,7 +1,11 @@
 const express = require('express')
 const router = express.Router()
 const controller = require ('../controllers/bancoController')
-
+ 
+router.get('/oi', (req, res) => {
+    res.status(200).send({"mensagem":"oi estou funcionando"})
+}
+)
 // listar todos os bancos / get> find
 router.get ('/todos', controller.getAll)
 //criar um novo banco /post > save
