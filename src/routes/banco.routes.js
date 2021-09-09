@@ -10,14 +10,13 @@ router.get('/oi', (req, res) => {
 router.get ('/todos', controller.getAll)
 //criar um novo banco /post > save
 router.post ('/cadastrar', controller.createbanco)
-//listar um banco /get/findById
 
-//atualizar uma informaçao especifica num banco/patch/findById/save
+//atualizar uma informaçao especifica num banco
 router.patch ('/:id', controller.updateOne)
 router.patch('/nome/:id', controller.updateNome)
 router.patch('/endereco/:id', controller.updateEndereco)
 router.patch('/telefone/:id', controller.updateTelefone)
-//deletar um titulo/delete/findById/remove
+
 router.delete('/deletar/:id', controller.deleteById)
 
 module.exports = router

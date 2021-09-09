@@ -12,7 +12,6 @@ const createbanco =  async (req, res) => {
     nome: req.body.nome,
     endereco: req.body.endereco,
     telefone: req.body.telefone,
-    horas: req.body.horas,
     creadoEm: req.body.criadoEm
     })
     const bancoJaExiste = await Banco.findOnde({nome: req.body.nome})
