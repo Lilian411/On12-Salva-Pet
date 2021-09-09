@@ -92,7 +92,7 @@ const updateTelefone = async (req, res) => {
 
 const deleteById = async (req, res) => {
     const banco = await Banco.findById(req.params.id)
-        if(!banco == null){
+        if(banco == null){
             return res.status(404).json({message: "Banco não encontrado."})
         }
         try{
