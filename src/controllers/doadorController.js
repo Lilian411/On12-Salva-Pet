@@ -2,12 +2,8 @@ const mongoose = require('mongoose')
 const Doador = require('../models/doador')
 
 const getAll = async (req, res) => {
-    const doadores = Doador.find()
-   //res.status(200).json(doadores)
-   try{ res.status(200).json({doadores})
-} catch(error){
-       res.status(500).json({error})
-}
+    const doador = await Doador.find()
+    res.status(200).json(doador)
 }
 const createdoador = async (req, res) => {
     const doador = new Doador ({
