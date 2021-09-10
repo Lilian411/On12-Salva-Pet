@@ -13,7 +13,7 @@ const createbanco =  async (req, res) => {
     telefone: req.body.telefone,
     creadoEm: req.body.criadoEm
     })
-    const bancoJaExiste = await Banco.findOnde({nome: req.body.nome})
+    const bancoJaExiste = await Banco.findOne({nome: req.body.nome})
     if (bancoJaExiste) {
        return res.status(409).json({error: ' Banco ja cadastrado.'})
     }
