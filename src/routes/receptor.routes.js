@@ -2,10 +2,7 @@ const express = require('express')
 const router = express.Router()
 const controller = require('../controllers/receptorController')
 
-// listar todos os bancos / get> find
 router.get('/todos', controller.getAll )
-
-//criar um novo banco /poasync (req, res) => 
 router.post('/cadastrar', controller.createReceptor)
 
 router.patch('/:id', controller.updateOne)
