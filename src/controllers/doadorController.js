@@ -2,14 +2,13 @@ const mongoose = require('mongoose')
 const Doador = require('../models/doador')
 
 const getAll = async (req, res) => {
-    //const doadores = await Doador.find()
-   // res.status(200).json(doadores)
-   try{ res.status(200).json({sera: 'tudo ok, xuxu'})
+    const doadores = Doador.find()
+   //res.status(200).json(doadores)
+   try{ res.status(200).json({doadores})
 } catch(error){
        res.status(500).json({error})
 }
 }
-
 const createdoador = async (req, res) => {
     const doador = new Doador ({
    _id: new mongoose.Types.ObjectId(),

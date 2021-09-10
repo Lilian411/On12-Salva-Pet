@@ -1,9 +1,7 @@
-require('dotenv').config()
-const mongoose = require('mongoose')
+require("dotenv").config()
+const mongoose = require("mongoose")
 
-const MONGODB_URL =  process.env.MONGODB_URI || 'mongodb://localhost:27017/petz-db' 
-
-
+const MONGODB_URL =  process.env.MONGODB_URI || "mongodb://localhost:27017/petz-db"
 
 const connect = () => {
   mongoose.connect(MONGODB_URL, {

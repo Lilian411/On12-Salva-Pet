@@ -1,11 +1,10 @@
 const mongoose = require('mongoose')
-const Banco = require('../models/banco')
+const Banco = require("../models/banco")
 
 const getAll = async (req, res) => {
     const bancos = await Banco.find()
     res.status(200).json(bancos)
 }
-
 const createbanco =  async (req, res) => {
     const banco = new Banco ({
    _id: new mongoose.Types.ObjectId(),

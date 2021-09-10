@@ -12,7 +12,7 @@ const getAll =  async ( req, res) => {
         pet: req.body.pet,
         idade: req.body.idade,
         raca: req.body.raca,
-        peso: req.body.horas,
+        peso: req.body.peso,
         vacinas: req.body.vacinas,
         dono: req.body.dono,
         telefone: req.body.telefone,
