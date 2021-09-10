@@ -11,6 +11,7 @@ const createbanco =  async (req, res) => {
     nome: req.body.nome,
     endereco: req.body.endereco,
     telefone: req.body.telefone,
+    email: req.body.email,
     creadoEm: req.body.criadoEm
     })
     const bancoJaExiste = await Banco.findOne({nome: req.body.nome})
