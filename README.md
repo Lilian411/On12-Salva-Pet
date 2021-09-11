@@ -1,5 +1,15 @@
-![Salva-Petz](C:\Users\Lilian\OneDrive\Imagens)
+![Salva-Petz](https://image.freepik.com/vector-gratis/personaje-dibujos-animados-lindo-gato-perro_52569-1058.jpg)
 
+
+---
+<a align href = "#Apresentação"> Apresentação </a> │
+<a align href = "#Objetivo"> Objetivo </a> │
+<a align href = "#Tecnologias usadas"> Tecnologias usadas </a> │
+<a align href = "#Arquitetura MVC"> Arquitetura MVC </a> │
+<a align href = "#Contribuição"> Contribuição </a> │
+<a align href = "#Autora"> Autora </a> │
+</p>
+---
 
 
 ### APRESENTAÇÃO : 
@@ -26,36 +36,59 @@
 ---------------------------------------------------------------------------------------------
 
 ARQUITETURA MVC :
+`` `
  📁 projetoFinal
    |
-   |:-  📁 src
-   |    |
-   |    |:-: 📁 data
-   |         |:-: 📄 database.js
+   |-  📁 src
+   | |
+   | |- 📁 data
+   | |- 📄 database.js
    |
-   |    |- 📁 controllers
-   |         |:-: 📄 bancoController.js
-   |         |:-: 📄 doadorController.js
-   |         |:-: 📄 receptorController.js
+   | |- 📁 controllers
+   | |- 📄 bancoController.js
+   | |- 📄 doadorController.js
+   | |- 📄 receptorController.js
    |
-   |    |:- 📁 models
-   |         |:-: 📄 banco.js
-   |         |:-: 📄 doador.js
-   |         |:-: 📄 receptor.js
+   | |- 📁 models
+   | |- 📄 banco.js
+   | |- 📄 doador.js
+   | |- 📄 receptor.js
    |
-   |    |:- 📁 routes
-   |         |:-: 📄 banco.routes.js 
-   |         |:-: 📄 doador.routes.js
-   |         |:-: 📄 receptor.routes.js
+   | |- 📁 routes
+   | |- 📄 banco.routes.js 
+   | |- 📄 doador.routes.js
+   | |- 📄 receptor.routes.js
    | 
    |
    |
-   |:- 📄 .env
-   |:- 📄 .env.example
-   |:- 📄 .gitignore
-   |:- 📄 package-lock.json
-   |:- 📄 package.json
-   |:- 📄 procfile
-   |:- 📄 server.js
-
+   |- 📄 .env
+   |- 📄 .env.example
+   |- 📄 .gitignore
+   |- 📄 package-lock.json
+   |- 📄 package.json
+   |- 📄 procfile
+   |- 📄 server.js
+   `` `
   ----------------------------------------------------------------------------------------------
+  ###  Contribuição
+
+* Faça um `fork` do projeto;
+
+*Copie uma url do **fork** realizado e, no **prompt de comando** da sua máquina, realize o clone do projeto através do `git clone <link_do_fork_do_repositorio>` ;
+
+* Crie uma **branch** para realizar suas contribuições `git checkout -b feature / <sua_branch>` ;
+
+* Instale como dependências à execução da API através do comando `npm install` ;
+
+* Não RAIZ DO PROJETO, renomeie `.env.example` para ` .env` e adicione OS Valores das Variáveis `PORT` (porta sugerida ` 8888` ), `MONGODB_URL` (string de Conexão com o Banco de Dados)
+
+* Para executar uma API, utilize o comando `npm start` no seu terminal 
+
+* Após suas contribuições no projeto, realizar o **commit** com o comando `git commit -m 'sua mensagem'` 
+
+* Para subir o projeto no seu GitHub, basta executar o comando `git push origin / <sua_branch>` 
+
+* E finalizar criando um novo **Pull Request** com as contribuições para o projeto original.
+
+--------------------------------------------------------------------------------------------
+_Autora:_ [Lilian Guedes](http://linkedin.com/in/lilian-guedes-09601320b)
