@@ -9,7 +9,7 @@
 <a align href = "#Contribuição"> Contribuição </a> │
 <a align href = "#Autora"> Autora </a> │
 </p>
----
+
 
 
 ### APRESENTAÇÃO : 
@@ -23,7 +23,7 @@
 ## Tecnologias utilizadas:
   Ferramentas   |	      Descrição
 :--------------:|:----------------------------------------------------------------------------:
- __javascript__ |	Linguagem de programação
+ __javascript__:|	Linguagem de programação
  __nodejs__:	  | Ambiente de execução do javascript
  __express__:	  | Framework NodeJS
  __dotenv__:	  | Dependência para proteger dados sensíveis do projeto
@@ -35,7 +35,10 @@
  __Heroku__:    |Hospedagem na nuvem, com integração ao GitHub.
 ---------------------------------------------------------------------------------------------
 
-ARQUITETURA MVC :
+<br>
+<br>
+
+### ARQUITETURA MVC :
 `` `
  📁 projetoFinal
    |
@@ -69,6 +72,9 @@ ARQUITETURA MVC :
    |- 📄 procfile
    |- 📄 server.js
    `` `
+   <br>
+   <br>
+
   ----------------------------------------------------------------------------------------------
   ###  Contribuição
 
