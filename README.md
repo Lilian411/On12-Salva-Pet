@@ -39,7 +39,7 @@
 <br>
 
 ### ARQUITETURA MVC :
-`` `
+```
  📁 projetoFinal
    |
    |-  📁 src
@@ -71,7 +71,7 @@
    |- 📄 package.json
    |- 📄 procfile
    |- 📄 server.js
-   `` `
+   ```
    <br>
    <br>
 
